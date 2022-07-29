@@ -1,0 +1,64 @@
+<!-- 
+    URLs e Caminhos dos arquivos
+        - uniform resource locator
+        -https://www.google.com.br
+
+    -Sequencia de texto que define onde algo está localizado na web
+    -url usam caminhos pra encontrar arquivos
+
+    Caminho dos arquivos
+        - Onde, no explorador de arquivos, um recurso está localizado.
+        ela pode te levar para arquivos de diretórios diferentes.
+-->
+
+
+<!--
+    Como navegar pelos caminhos?
+    -mesmo diretório
+    -entrando em diretórios
+    -saindo de diretórios
+    -diretório raiz (root ou pai)
+-->
+
+<!-- abrir mesmo diretório -->
+<a href="hyperlinks.html">Abrir Hyperlinks, não conseguirá visualizar</a>
+<br>
+
+<!-- abrir diretórios diferentes, criar a pasta conteudoElemento e sublocar a pasta conteúdos-elementos.html (ao tentar clicar 
+    no primeiro e nesse segundo link não conseguiremos achar os arquivos após as modificações a seguir a forma como 
+    eles deverão ser escritas estarão abaixo do diretório raiz)-->
+<a href="conteudoElemento/conteúdo-elementos.html">Abrir arquivo da pasta conteudoElemento, que está na pasta anterior, não conseguirá visualizar</a>
+<br>
+
+<!-- sair do diretório e pegar arquivo de outro, criar subpasta para hospedar o arquivo urls-caminhos.html -->
+<a href="../hyperlinks.html">arquivo de outro diretório, na pagina anterior</a>
+<br>
+
+<!-- Diretório raiz -->
+<a href="./urls-caminhos.html">arquivo diretório raiz</a>
+<br>
+<a href="urls-caminhos.html">arquivo diretório raiz</a>
+<br>
+<a href="../conteudoElemento/conteúdo-elementos.html">Arquivo já na pasta conteudoElemento</a>
+<br> 
+
+<br>
+<br>
+<br>
+
+<!--
+    Urls absolutos versus relativo
+
+    - Absoluto
+        Inclui protocolo e nome de domínio
+        https://www.kesttou.com.br
+        Sempre apontará para o mesmo local, porque é absoluto
+
+    - Relativos
+        - Relativo á pagina aberta no momento
+        - apontará para lugares diferentes
+-->
+
+<a href="google.com">Relativo: Ir para o Google</a>
+<br>
+<a href="https://www.google.com.br">Absoluto: Ir para o Google</a>
