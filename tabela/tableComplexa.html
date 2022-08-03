@@ -1,0 +1,65 @@
+<!--
+    <caption></caption> : Utilizado para dar um título á tabela
+    Rowspan: utilizado quando você quer que um conteúdo ocupe
+    mais que uma linha.
+    Colspan: utilizado quando você quer que um conteúdo ocupe
+    mais que uma coluna.
+
+    A tag <colgroup></colgroup>, é utilizada para agrupamento de colunas
+
+    Para estilizar é utilizada a tag: style=""
+
+    Atributo scope serve para permitir que essa acessibilidade saiba que
+    o escopo do cabeçalho é relacionado com, o agrupamento, ou a coluna, ou a linha, 
+    o atributo é escrito scope="" .
+
+-->
+
+
+<table>
+    <caption>Produtos produzidos e vendidos</caption>
+    
+    <colgroup>
+        <col>
+        <col span="2" style="background-color: rgb(130, 130, 240)">
+        <col span="2" style="background-color: rgb(186, 228, 110)">
+    </colgroup>
+    <thead>
+        <tr>
+            <th rowspan="2"></th>
+            <th colspan="2" scope="colgroup" style="background-color: rgb(224, 224, 238)">Shopee</th>
+            <th colspan="2" scope="colgroup" style="background-color: rgb(201, 219, 168)">Aliexpress</th>
+        </tr>
+        <tr>
+            <th scope="col">Produzidos</th>
+            <th scope="col">Vendidos</th>
+            <th scope="col">Produzidos</th>
+            <th scope="col">Vendidos</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <th scope="row" style="background-color:yellow">Colar</th>
+            <td>30</td>
+            <td>27</td>
+            <td>22</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <th scope="row" style="background-color:yellow">Pulseira</th>
+            <td>40</td>
+            <td>32</td>
+            <td>50</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <th scope="row" style="background-color:yellow">Anéis</th>
+            <td>20</td>
+            <td>15</td>
+            <td>18</td>
+            <td>10</td>
+        </tr>
+    </tbody>
+
+</table>
