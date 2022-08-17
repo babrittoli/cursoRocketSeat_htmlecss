@@ -1,0 +1,112 @@
+/* # Flexbox: Flexible Box 
+
+# *display-flex*: identificar que a tag vai ser  o container do flexbox. 
+
+
+# *flex-direction*: identificar qual vai ser o eixo principal e perpendicular.
+- flex-direcetion: row;
+- flex-direcetion: row-reverse;
+- flex-direcetion: column;
+- flex-direcetion: column-reverse;
+
+
+# *justify-content*: alinhar os elementos no eixo principal 
+- justify-content: flex-start;
+- justify-content: flex-end;
+- justify-content: center;
+- justify-content: space-between;
+- justify-content: space-around;
+
+
+# *align-items*: alinhar os elementos no eixo perpendicular.
+- align-items: flex-star;
+- align-items: flex-end;
+- align-items: center;
+- align-items: stretch;
+- align-items: baseline; 
+
+
+# *flex-wrap*: Para decidir se os elementos irão para a linha de baixo 
+quando chegarem no final ou se ficarão comprimidos
+  - flex-wrap: nowrap;
+  - flex-wrap: wrap;
+  - flex-wrap: wrap-reverse;
+  
+
+# *flex-flow*: para identificar o flex-direction e o flex-wrap de uma vez só
+  - flex-flow: row wrap;
+
+
+# *align-content*: Para quando existe o flex-wrap e queremos alinhar as linhas
+ao nosso eixo perpendicular
+  - align-content: flex-start;
+  - align-content: flex-end;
+  - align-content: center;
+  - align-content: space-between;
+  - align-content: space-around;
+
+# *gap, row-gap e column-gap*: Para fixar algum tamanho no espaço entre os elementos, 
+seja lado a lado ou entre as linhas.
+
+# Dá para ocultar alguns itens, comentando-os.
+
+# *Order*: (-1,0, 1) 
+
+
+
+
+
+*/
+
+.container {
+  background-color: #f1e78a;
+  padding: 16px;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: Sans-serif; 
+  flex-flow: wrap;
+  align-content: center;
+  row-gap: 10px;
+  column-gap: 30px;
+  
+ 
+}
+.bloco-1 {
+  background-color: #df93b2;
+  width: 100px;
+  height: 100px;
+  order: 0;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;  
+  border-radius: 15px; 
+}
+
+.bloco-2 {
+  background-color: #7deaee;
+  width: 100px;
+  height: 100px;
+
+  order: 0;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto; 
+  border-radius: 15px; 
+  
+}
+
+.bloco-3 {
+  background-color: #d2f17a;
+  width: 100px;
+  height: 100px;
+  order: 0;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto; 
+  border-radius: 15px; 
+      
+}
