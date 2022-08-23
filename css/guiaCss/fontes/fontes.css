@@ -1,0 +1,15 @@
+
+
+p {
+    font-family: "Times New Roman", "serif";
+    font-weight: bold;
+    font-style: oblique;
+    font-size: 30px;
+    letter-spacing: 4px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    text-decoration: underline solid green;
+    text-align: center;
+    text-shadow: 1px 1px 8px green;
+}
+

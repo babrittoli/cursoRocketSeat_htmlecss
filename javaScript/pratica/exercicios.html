@@ -1,0 +1,125 @@
+<!-- Declare uma variável de nome weight --> 
+<script>
+    let weight
+</script> 
+
+<!-- Que tipo de dado é a variavel acima? undefined-->
+
+<script>
+    console.log(typeof weight) 
+</script>
+
+
+<!--
+    Declare uma variável e atribua valores para cada
+um dos dados
+*name: string
+*age: number (integer)
+*stars: number (float)
+*isSubscribed: boolean  
+
+-->
+ 
+<script> 
+    
+    let name = "BARBARA"
+    let age = "25"
+    let stars = 2.5
+    let isSubscribed = true
+
+
+</script>
+
+<!--
+    A variável student abaixo é de que tipo de dados? 
+
+Atribua a ela as mesmas propriedades e valores
+do exercicio 3.
+
+Mostre no console a seguinte mensagem:
+    <name> de idade <age> pesa <weight> kg
+
+Atenção substitua <name> <age> e <weight> pelos valores
+de cada propriedade do objeto
+-->
+
+<script>
+    let student = {
+        name: "BARBARA",
+        age: 25,
+        weight: 60.2,
+    }
+
+    console.log(typeof student) 
+    console.log(`${student.name} tem ${student.age} anos e pesa ${student.weight} kg.`)
+</script>
+
+<!--
+    Declare um variável do tipo Array, de nome: Students. 
+    e atribua a ela nenhum valor, deixando-a vazia. 
+-->
+
+<!-- 
+    
+<script>
+    let students = []
+</script>
+
+--> 
+
+<!--
+    Reatribua valor para a variavel acima, colocando dentro
+dela o objeto student da questão 4 (Não copiar e colar o objeto
+mas usar o objeto criado e inserir ele no array)
+-->
+
+<script>
+    students = [
+        student
+    ]
+        
+    console.log(students)
+</script>
+
+<!--
+    Coloque no console o valor da posição zero do Array.
+-->
+
+<script>
+    console.log(students[0])
+</script>
+
+<!--
+    Crie um novo student e coloque na posião 1 
+    do array students
+-->
+
+<script>
+    const jean = {
+        name: "Jean",
+        age: 33,
+        weight: 60.3,
+        isSubscribed: true
+    }
+
+    students = [
+        student,
+        jean
+    ]
+    console.log(students)
+</script>
+
+<!--
+    Sem rodar o código responda qual é a resposta do código
+    abaixo e por que? 
+    Após sua resposta, rode o código e veja se você acertou.
+
+    Resposta: Irá ser uma variante undefined, por que haverá um 
+    hoisting. a variavel ainda não tinha sido criada.
+-->
+
+<script>
+    console.log(a)
+    var a = 1
+</script>
+
