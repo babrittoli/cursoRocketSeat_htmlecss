@@ -7,11 +7,11 @@
 {propriedade: "valor"}
 
 ```js
-console.log({
+console.log() {
     name: "Barbara Brito",
     idade:"25",
     andar: function() {
         console.log('andar')
     }
-})
+}
 ```
